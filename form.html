@@ -30,8 +30,15 @@
     </style>
 </head>
 <body class="popupshow">
+
     <div id="popupform">
         여기 폼태그만든다.
+        <button>닫기</button>
     </div>
+    <script>
+        document.querySelector("#popupform button").addEventListener("click",function(){
+            document.body.classList = "";
+        })
+    </script>
 </body>
 </html>
